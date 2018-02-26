@@ -24,14 +24,17 @@ td {
 
 table {
     border-collapse: collapse;
+    border: 0px;
     margin: 0 auto;
+
 }
 
 tr {
-    height: 20px;
+    height: 0px;
 }
 
 td {
+    height: 20px;
     width: 20px;
 }
 
