@@ -38,7 +38,7 @@ function makeGrid() {
   }
 }
 
-// Submit Listener
+// Submit Form Listener
 sizePicker.submit(function(evt){
   pixelCanvas.empty();
   makeGrid();
@@ -53,6 +53,10 @@ colorPicked.change(function () {
 
 //Cell Change Listener
 cell.click(function(evt) {
-  $(evt.target).css({'background-color':
-                    cellColor});
+  $(evt.target).css({'background-color': cellColor});
+});
+
+//Clear Cell Color
+cell.dblclick(function(evt) {
+  $(evt.target).css({'background-color': '#ffffff'});
 });
