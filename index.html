@@ -1,12 +1,13 @@
 <html>
 <head>
     <title>Pixel Art Maker!</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 <body>
-    <h1>Lab: Pixel Art Maker</h1>
+  <div class="left">
+    <h1>Pixel Art Maker</h1>
 
     <h2>Choose Grid Size</h2>
     <form id="sizePicker">
@@ -17,13 +18,18 @@
         <input type="submit">
     </form>
 
-    <h2>Pick A Color</h2>
+    <h2>Pick A Color</h2  >
     <input type="color" value="#a5f37b" id="colorPicker">
 
+  </div>
+  <div class="right">
+
     <h2>Design Canvas</h2>
+
   <h3>(Click to set color, Double click to remove)</h3>
     <table id="pixelCanvas">
     </table>
+  <div>
 
     <script src="designs.js"></script>
 </body>

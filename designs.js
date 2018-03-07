@@ -1,8 +1,3 @@
-// Select color input
-// Select size input
-
-// When size is submitted by the user, call makeGrid()
-
 //Constants
 const pixelCanvas = $('#pixelCanvas');
 const sizePicker = $('#sizePicker');
@@ -58,5 +53,5 @@ cell.click(function(evt) {
 
 //Clear Cell Color
 cell.dblclick(function(evt) {
-  $(evt.target).css({'background-color': '#ffffff'});
+  $(evt.target).css({'background-color': ''});
 });
