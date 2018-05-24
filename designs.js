@@ -9,12 +9,12 @@ const colorPicked = $('#colorPicker');
   let height = 0;
   let width = 0;
   for (var h = 0; h < 5; h++) {
-    pixelCanvas.append('<tr></tr>');
+    pixelCanvas.append('<tr>');
     for (var w = 0; w < 5; w++) {
       pixelCanvas
         .children()
         .last()
-        .append('<td></td>');
+        .append('<td></td></tr>');
     }
   }
 });
@@ -23,12 +23,12 @@ function makeGrid() {
   let inputHeight = $('#inputHeight').val();
   let inputWidth = $('#inputWidth').val();
   for (var h = 0; h < inputHeight; h++) {
-    pixelCanvas.append('<tr></tr>');
+    pixelCanvas.append('<tr>');
     for (var w = 0; w < inputWidth; w++) {
       pixelCanvas
         .children()
         .last()
-        .append('<td></td>');
+        .append('<td></td></tr>');
     }
   }
 }
